@@ -1,0 +1,44 @@
+{
+  "name": "string-is-uuid",
+  "version": "1.0.0",
+  "description": "RegExp free UUID validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-ci": "jest --ci --coverage"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "coverageReporters": [
+      "clover",
+      "json",
+      "lcov",
+      "text",
+      "json-summary"
+    ],
+    "verbose": false,
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/do-/node-string-is-uuid.git"
+  },
+  "keywords": [
+    "uuid",
+    "validator"
+  ],
+  "author": "Dmitry Ovsyanko",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "uuid": "^11.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/do-/node-string-is-uuid/issues"
+  },
+  "homepage": "https://github.com/do-/node-string-is-uuid#readme"
+}
