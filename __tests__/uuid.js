@@ -10,6 +10,13 @@ test ('bad', () => {
 
 })
 
+test ('special', () => {
+
+	expect (isUuid ('FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF')).toBe (15)
+	expect (isUuid ('ffffffff-ffff-ffff-ffff-ffffffffffff')).toBe (15)
+
+})
+
 test ('version', () => {
 
 	for (let i = 0; i < 100; i ++) {

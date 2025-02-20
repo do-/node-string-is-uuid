@@ -42,7 +42,7 @@ const isUuid = s => {
 
 	const ver = s.charCodeAt (14) - CH_0
 
-	return ver
+	return ver > 48 ? ver - 39 : ver > 16 ? ver - 7 : ver
 
 }
 
